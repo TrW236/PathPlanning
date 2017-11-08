@@ -161,7 +161,7 @@ namespace states_machine{
 
         for (int i = 0; i < sensor_fusion.size(); ++i) {
             double d = sensor_fusion[i][6];
-            if (d < 5.0 + 4.0 * (*lane) && d > 3.0 * (*lane)) {  // todo tolerance (at the moment is 1.0 meter)
+            if (d < 5.0 + 4.0 * (*lane) && d > 4.0 * (*lane) - 1.0) {  // todo tolerance (at the moment is 1.0 meter)
                 if (sensor_fusion[i][5] > car_s && (double) sensor_fusion[i][5] - car_s < danger_dist) {
                     *too_close = true;
                     idx_too_close = i;
