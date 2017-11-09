@@ -274,19 +274,19 @@ int main() {
 
             if(prev_size < 1){
                 double dl = 5;
-                ref_p[0] = car_x;
-                ref_p[1] = car_y;
-                prev_p[0] = car_x - dl * cos(rad_yaw);
-                prev_p[1] = car_y - dl * sin(rad_yaw);
-				ahead_p[0] = car_x + dl * cos(rad_yaw);
-				ahead_p[1] = car_y + dl * sin(rad_yaw);
+                ref_p[0] = car_x + dl * cos(rad_yaw);
+                ref_p[1] = car_y + dl * sin(rad_yaw);
+                prev_p[0] = car_x;
+                prev_p[1] = car_y;
+				ahead_p[0] = car_x + 2.0 * dl * cos(rad_yaw);
+				ahead_p[1] = car_y + 2.0 * dl * sin(rad_yaw);
             }else{
                 ref_p[0] = previous_path_x[1];
                 ref_p[1] = previous_path_y[1];
                 prev_p[0] = previous_path_x[0];
                 prev_p[1] = previous_path_y[0];
-				ahead_p[0] = previous_path_x[5];
-				ahead_p[1] = previous_path_y[5];
+				ahead_p[0] = previous_path_x[2];
+				ahead_p[1] = previous_path_y[2];
             }
 
             // car coordinates

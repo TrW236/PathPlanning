@@ -10,7 +10,7 @@
 
 ## Result
 
-(in progress)
+The video is uploaded on Youtube. [link](https://www.youtube.com/watch?v=7R0xwKGxPU0&index=5&list=PLNDTbGbATLcED0iX8K-zY3vrNbwhxV8gC)
 
 ## Model Description
 
@@ -32,6 +32,10 @@ I used four states in the path planner:
     * When our car has finished the lane changing, the state will be changed back to `MAX VELOCITY`.
 
 ```
+   <Start>
+      |
+      |
+      v
 [MAX VELOCITY] <-------------------------> [FOLLOW CAR]
     ^    ^                                      |
     |    |                                      |

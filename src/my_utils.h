@@ -126,12 +126,16 @@ namespace states_machine{
         if (left) {
             (*lane)--;
             *state = CHANGING;
+            idx_too_close = -1;
+            follow_vel = *vel_ref;
             return;
         }
         bool right = check_right(lane, car_s, sensor_fusion);
         if (right) {
             (*lane)++;
             *state = CHANGING;
+            idx_too_close = -1;
+            follow_vel = *vel_ref;
             return;
         }
 //        cout << "check left: "<< left << endl;
@@ -140,7 +144,7 @@ namespace states_machine{
     }
 
     void change_lane(int *state, double *lane, double *vel_ref, double car_s, double car_d, vector<vector<double>> sensor_fusion) {
-        follow_vel = v_max * 0.98;
+        // follow_vel = v_max * 0.98;
         double vel_dec = 0.5;
         double vel_inc = 0.25;
         if (*vel_ref > follow_vel + vel_dec) {
