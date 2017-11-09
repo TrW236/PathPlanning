@@ -14,9 +14,9 @@ The video is uploaded on Youtube. [link](https://www.youtube.com/watch?v=7R0xwKG
 
 Some screenshots of the simulation are as below:
 
-![res1](https://filedn.com/lUE8ye7yWpzFOF1OFLVsPau/Github/path_planning/res1.png) 
+<img src="https://filedn.com/lUE8ye7yWpzFOF1OFLVsPau/Github/path_planning/res1.png" alt="res1" width="333">
 
-![res2](https://filedn.com/lUE8ye7yWpzFOF1OFLVsPau/Github/path_planning/res2.png)
+<img src="https://filedn.com/lUE8ye7yWpzFOF1OFLVsPau/Github/path_planning/res2.png" alt="res2" width="333">
 
 ## Model Description
 
